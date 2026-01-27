@@ -1,19 +1,43 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerMove : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
-    public float walkSpeed = 10f;
-    
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [Header("Refs")]
+    public Rigidbody rb;
 
-    // Update is called once per frame
+    [Header("Movement Settings")]
+    public float moveSpeed = 3f;
+    
+    private PlayerControls controls;
+    private Vector3 newVelocity;
+    
+    void Awake()
+    {
+        controls = new PlayerControls();
+    }
+    
+    void OnEnable()
+    {
+        controls.Enable();
+    }
+    
+    void OnDisable()
+    {
+        controls.Disable();
+    }
+    
     void Update()
     {
+        Vector2 moveInput = controls.Default.Move.ReadValue<Vector2>();
+        newVelocity = Vector3.up * rb.linearVelocity.y;
         
+        newVelocity.x = moveInput.x * moveSpeed;
+        newVelocity.y = moveInput.y * moveSpeed;
+    }
+
+    void FixedUpdate()
+    {
+        rb.linearVelocity = transform.TransformDirection(newVelocity);
     }
 }
