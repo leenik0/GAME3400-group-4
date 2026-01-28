@@ -3,14 +3,13 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [Header("Refs")]
+    [Header("References")]
     public Rigidbody rb;
-
-    [Header("Movement Settings")]
-    public float moveSpeed = 3f;
+    
+    [Header("Settings")]
+    public float walkSpeed = 3f;
     
     private PlayerControls controls;
-    private Vector3 newVelocity;
     
     void Awake()
     {
@@ -29,15 +28,14 @@ public class PlayerMovement : MonoBehaviour
     
     void Update()
     {
-        Vector2 moveInput = controls.Default.Move.ReadValue<Vector2>();
-        newVelocity = Vector3.up * rb.linearVelocity.y;
+        Vector2 moveInput = controls.Default.Move.ReadValue<Vector2>();  
+        Vector3 move = transform.right * moveInput.x + transform.forward * moveInput.y;
+        move.y = 0;
         
-        newVelocity.x = moveInput.x * moveSpeed;
-        newVelocity.y = moveInput.y * moveSpeed;
-    }
-
-    void FixedUpdate()
-    {
-        rb.linearVelocity = transform.TransformDirection(newVelocity);
+        float speed = walkSpeed;
+        
+        Vector3 newVelocity = move * speed;
+        newVelocity.y = rb.linearVelocity.y;
+        rb.linearVelocity = newVelocity;
     }
 }
