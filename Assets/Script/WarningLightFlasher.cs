@@ -19,6 +19,11 @@ public class WarningLightFlasher : MonoBehaviour
     public Color warningColor = new Color(1f, 0.1f, 0.1f, 1f);
     public float emissionIntensity = 4.0f;
 
+    [Header("Audio")]
+    public AudioSource alarmAudio;
+    public AudioClip alarmClip;
+    [Range(0f, 1f)] public float alarmVolume = 0.8f;
+
     [Header("Phase")]
     public float phaseOffset = 0f;
 
@@ -76,6 +81,14 @@ public class WarningLightFlasher : MonoBehaviour
     void ApplyState(bool on)
     {
         if (isOn == on) return;
+
+        // 只有从“灭 -> 亮”的瞬间播一次
+        if (!isOn && on)
+        {
+            if (alarmAudio != null && alarmClip != null)
+                alarmAudio.PlayOneShot(alarmClip, alarmVolume);
+        }
+
         isOn = on;
 
         if (pointLight != null)
