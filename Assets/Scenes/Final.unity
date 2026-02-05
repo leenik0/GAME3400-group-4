@@ -93,7 +93,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 20201, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: eb9e26c0d79874f41b42bdda0efa2f3d, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -614,7 +614,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 12
   m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9169811, g: 0.5885758, b: 0.40658593, a: 1}
   m_Intensity: 10
   m_Range: 22.294537
   m_SpotAngle: 30
@@ -4685,7 +4685,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 12
   m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9169811, g: 0.5885758, b: 0.40658593, a: 1}
   m_Intensity: 10
   m_Range: 22.294537
   m_SpotAngle: 30
@@ -5985,7 +5985,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 12
   m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9169811, g: 0.5885758, b: 0.40658593, a: 1}
   m_Intensity: 10
   m_Range: 22.294537
   m_SpotAngle: 30
@@ -6763,9 +6763,9 @@ Light:
   serializedVersion: 12
   m_Type: 0
   m_Color: {r: 0.98490566, g: 0.8860667, b: 0.7711997, a: 1}
-  m_Intensity: 7765
+  m_Intensity: 7852.95
   m_Range: 132.07
-  m_SpotAngle: 45.080704
+  m_SpotAngle: 92.47247
   m_InnerSpotAngle: 23.05547
   m_CookieSize2D: {x: 0.5, y: 0.5}
   m_Shadows:
@@ -6826,7 +6826,7 @@ Transform:
   m_GameObject: {fileID: 1297805752}
   serializedVersion: 2
   m_LocalRotation: {x: 0.63562053, y: 0.30981705, z: 0.30981705, w: 0.63562053}
-  m_LocalPosition: {x: 27.09, y: 62.35, z: 22.5}
+  m_LocalPosition: {x: 31.85, y: 62.35, z: 22.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8477,7 +8477,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 12
   m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9169811, g: 0.5885758, b: 0.40658593, a: 1}
   m_Intensity: 10
   m_Range: 22.294537
   m_SpotAngle: 30
@@ -9672,7 +9672,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 12
   m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9169811, g: 0.5885758, b: 0.40658593, a: 1}
   m_Intensity: 10
   m_Range: 22.294537
   m_SpotAngle: 30
