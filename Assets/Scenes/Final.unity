@@ -2896,6 +2896,7 @@ PrefabInstance:
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a2948e168b521a45a854aec524c23b7, type: 3}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!64 &1721615440
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3098,6 +3099,9 @@ MeshCollider:
 =======
 --- !u!1001 &6921857301906097529
 >>>>>>> Stashed changes
+=======
+--- !u!1001 &6921857301906097529
+>>>>>>> Stashed changes
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -3105,6 +3109,7 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     - target: {fileID: -8679921383154817045, guid: c62c81088c5f0cd46bc15baa9d362719, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3290,6 +3295,8 @@ MeshCollider:
   m_CookingOptions: 30
   m_Mesh: {fileID: -5731547941117289742, guid: 2c170f82f759bd84593f479db3ef8e89, type: 3}
 =======
+=======
+>>>>>>> Stashed changes
     - target: {fileID: 3868904696914759828, guid: d15e28aca76ced3438a3eb1f02c3033c, type: 3}
       propertyPath: m_Name
       value: Tree2
@@ -3339,6 +3346,9 @@ MeshCollider:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d15e28aca76ced3438a3eb1f02c3033c, type: 3}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -3351,8 +3361,12 @@ SceneRoots:
   - {fileID: 1673319192}
   - {fileID: 709659891}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - {fileID: 2022089828}
   - {fileID: 429120414}
+=======
+  - {fileID: 6921857301906097529}
+>>>>>>> Stashed changes
 =======
   - {fileID: 6921857301906097529}
 >>>>>>> Stashed changes
