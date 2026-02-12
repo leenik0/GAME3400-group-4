@@ -49,6 +49,7 @@ public class PickUpObject : MonoBehaviour
 
             pickupObject.transform.position = myHands.transform.position;
             pickupObject.transform.rotation = myHands.transform.rotation;
+            pickupObject.transform.Rotate(-90f, 0, 0); 
             pickupObject.transform.parent = myHands.transform;
             hasItem = true;
         }
