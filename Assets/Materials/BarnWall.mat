@@ -401,7 +401,7 @@ Material:
     - _Offset_Z: 0
     - _OutlineOverridden: 0
     - _OutlineVisible: 1
-    - _Outline_Width: 10.9
+    - _Outline_Width: 12.41
     - _PPDLodThreshold: 5
     - _PPDMaxSamples: 15
     - _PPDMinSamples: 5
@@ -503,15 +503,15 @@ Material:
     - _simpleUI: 0
     - _utsTechnique: 0
     m_Colors:
-    - _1st_ShadeColor: {r: 0.7056604, g: 0.32353857, b: 0.39145803, a: 1}
+    - _1st_ShadeColor: {r: 0.6603774, g: 0.36756852, b: 0.41776437, a: 1}
     - _2nd_ShadeColor: {r: 0.50980395, g: 0.27450982, b: 0.31719807, a: 1}
     - _AngelRingMaskColor: {r: 0, g: 1, b: 0, a: 1}
     - _AngelRing_Color: {r: 1, g: 1, b: 1, a: 1}
     - _Ap_RimLightColor: {r: 1, g: 1, b: 1, a: 1}
-    - _BaseColor: {r: 0.83396226, g: 0.4805345, b: 0.4767746, a: 1}
+    - _BaseColor: {r: 0.8037735, g: 0.5080455, b: 0.5080455, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _BaseColorMaskColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0.83396226, g: 0.48053443, b: 0.47677457, a: 1}
+    - _Color: {r: 0.80377346, g: 0.5080455, b: 0.5080455, a: 1}
     - _ColorShift: {r: 0, g: 0, b: 0, a: 1}
     - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
