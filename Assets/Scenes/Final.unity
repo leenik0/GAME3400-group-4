@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 23cc03927b843414db86998984f53d1b, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 4d0e0ffc7a6c1bf44b435e0b23260f8c, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -167,15 +167,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2c170f82f759bd84593f479db3ef8e89, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 22.18
+      value: 21.43
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2c170f82f759bd84593f479db3ef8e89, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.72
+      value: -2.62
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2c170f82f759bd84593f479db3ef8e89, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.7
+      value: -0.58
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2c170f82f759bd84593f479db3ef8e89, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1770,15 +1770,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36566573ccd992f4e95fc7a7a29cce9b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.102673
+      value: -7.48
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36566573ccd992f4e95fc7a7a29cce9b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.026618
+      value: -1.28
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36566573ccd992f4e95fc7a7a29cce9b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -39.38
+      value: -40.6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36566573ccd992f4e95fc7a7a29cce9b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2895,10 +2895,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a2948e168b521a45a854aec524c23b7, type: 3}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 --- !u!64 &1721615440
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3098,18 +3094,6 @@ MeshCollider:
   m_CookingOptions: 30
   m_Mesh: {fileID: 3525479140033381557, guid: 2c170f82f759bd84593f479db3ef8e89, type: 3}
 --- !u!1001 &2022089828
-=======
---- !u!1001 &6921857301906097529
->>>>>>> Stashed changes
-=======
---- !u!1001 &6921857301906097529
->>>>>>> Stashed changes
-=======
---- !u!1001 &6921857301906097529
->>>>>>> Stashed changes
-=======
---- !u!1001 &6921857301906097529
->>>>>>> Stashed changes
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -3117,10 +3101,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     - target: {fileID: -8679921383154817045, guid: c62c81088c5f0cd46bc15baa9d362719, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3304,72 +3284,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5731547941117289742, guid: 2c170f82f759bd84593f479db3ef8e89, type: 3}
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-    - target: {fileID: 3868904696914759828, guid: d15e28aca76ced3438a3eb1f02c3033c, type: 3}
-      propertyPath: m_Name
-      value: Tree2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4538164967093930542, guid: d15e28aca76ced3438a3eb1f02c3033c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 45.99528
-      objectReference: {fileID: 0}
-    - target: {fileID: 4538164967093930542, guid: d15e28aca76ced3438a3eb1f02c3033c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.3637078
-      objectReference: {fileID: 0}
-    - target: {fileID: 4538164967093930542, guid: d15e28aca76ced3438a3eb1f02c3033c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -18.355091
-      objectReference: {fileID: 0}
-    - target: {fileID: 4538164967093930542, guid: d15e28aca76ced3438a3eb1f02c3033c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4538164967093930542, guid: d15e28aca76ced3438a3eb1f02c3033c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4538164967093930542, guid: d15e28aca76ced3438a3eb1f02c3033c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4538164967093930542, guid: d15e28aca76ced3438a3eb1f02c3033c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4538164967093930542, guid: d15e28aca76ced3438a3eb1f02c3033c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4538164967093930542, guid: d15e28aca76ced3438a3eb1f02c3033c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4538164967093930542, guid: d15e28aca76ced3438a3eb1f02c3033c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d15e28aca76ced3438a3eb1f02c3033c, type: 3}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -3380,21 +3294,5 @@ SceneRoots:
   - {fileID: 66832529}
   - {fileID: 1673319192}
   - {fileID: 709659891}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
   - {fileID: 2022089828}
   - {fileID: 429120414}
-=======
-  - {fileID: 6921857301906097529}
->>>>>>> Stashed changes
-=======
-  - {fileID: 6921857301906097529}
->>>>>>> Stashed changes
-=======
-  - {fileID: 6921857301906097529}
->>>>>>> Stashed changes
-=======
-  - {fileID: 6921857301906097529}
->>>>>>> Stashed changes
