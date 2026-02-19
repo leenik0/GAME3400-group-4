@@ -157,7 +157,7 @@ public partial class @PlayerMechanics: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""down"",
                     ""id"": ""79e2716e-bca2-4459-bcbf-aee891ec7f53"",
-                    ""path"": ""<Keyboard>/d"",
+                    ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

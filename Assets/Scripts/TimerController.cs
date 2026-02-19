@@ -4,12 +4,16 @@ using TMPro;
 public class CountdownTimer : MonoBehaviour
 {
     public TextMeshProUGUI timerText;
-    public float timeRemaining = 900; // 15 minutes
+    public float timeRemaining = 900;
+    private AudioSource tickSound;
     private bool timerIsRunning = false;
+    private int lastSecond;
 
     private void Start()
     {
+        tickSound = GetComponent<AudioSource>();
         timerIsRunning = true;
+        lastSecond = Mathf.CeilToInt(timeRemaining);
     }
 
     void Update()
@@ -20,6 +24,12 @@ public class CountdownTimer : MonoBehaviour
             {
                 timeRemaining -= Time.deltaTime;
                 DisplayTime(timeRemaining);
+                int currentSecond = Mathf.CeilToInt(timeRemaining);
+                if (currentSecond < lastSecond)
+                {
+                    tickSound.Play();
+                    lastSecond = currentSecond;
+                }
             }
             else
             {
