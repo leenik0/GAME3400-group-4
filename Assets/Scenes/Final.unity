@@ -2620,6 +2620,7 @@ GameObject:
   - component: {fileID: 1311293791}
   - component: {fileID: 1311293794}
   - component: {fileID: 1311293795}
+  - component: {fileID: 1311293796}
   m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -2757,7 +2758,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 5a00c5c2493cadb44b92291044c59019, type: 3}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 0.6
   m_Pitch: 1
@@ -2857,6 +2858,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CountdownTimer
   timerText: {fileID: 1311293791}
   timeRemaining: 900
+--- !u!114 &1311293796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311293790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e40d92b3cdaa054ba75101fa98fd774, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::countdownSFX
+  countdown: {fileID: 1311293795}
+  tickSFX: {fileID: 8300000, guid: e0daf1e532168ef48a9cabc32a12cbeb, type: 3}
 --- !u!1 &1358808444
 GameObject:
   m_ObjectHideFlags: 0
