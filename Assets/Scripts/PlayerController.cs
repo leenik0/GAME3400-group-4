@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     public Transform cam;
-    public float moveSpeed = 3.5f;
+    public float moveSpeed = 2.0f;
     public float lookSensitivity = 0.1f;
     public InputAction moveAction;
     public InputAction lookAction;

@@ -4,9 +4,15 @@ public class DollyTrigger : MonoBehaviour
 {
     public DollyZoomEffect dollyScript;
 
+    private void Start()
+    {
+        if (dollyScript == null)
+            dollyScript = Camera.main.GetComponent<DollyZoomEffect>();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player")) 
+        if (other.CompareTag("Player"))
         {
             dollyScript.effectEnabled = true;
         }
@@ -17,7 +23,7 @@ public class DollyTrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             dollyScript.effectEnabled = false;
-            dollyScript.fieldOfView = 60f;
+            // dollyScript.fieldOfView = 60f;
         }
     }
 }

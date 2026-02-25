@@ -696,9 +696,10 @@ GameObject:
   - component: {fileID: 1007650143}
   - component: {fileID: 1007650142}
   - component: {fileID: 1007650141}
+  - component: {fileID: 1007650144}
   m_Layer: 0
   m_Name: Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -821,6 +822,22 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1007650144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007650139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28a182cd32f9c6c4e9b54b0fb74fbe52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DollyZoomEffect
+  target: {fileID: 969691179}
+  effectEnabled: 0
+  multiplier: 2
+  transitionSpeed: 0.25
 --- !u!1 &1037574833
 GameObject:
   m_ObjectHideFlags: 0
@@ -834,7 +851,7 @@ GameObject:
   - component: {fileID: 1037574835}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -869,7 +886,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   cam: {fileID: 1007650140}
-  moveSpeed: 3.5
+  moveSpeed: 2
   lookSensitivity: 0.1
   moveAction:
     m_Name: Move
@@ -1041,6 +1058,78 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1888317712 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2602452545391547449, guid: 51d47cc6e6b1e2a4897c1e14c16cf7f5, type: 3}
+  m_PrefabInstance: {fileID: 8806770311876733557}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1914521169
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1914521170}
+  - component: {fileID: 1914521172}
+  - component: {fileID: 1914521171}
+  m_Layer: 0
+  m_Name: TriggerPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1914521170
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914521169}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 13.36, y: -0.04596, z: -2.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1888317712}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1914521171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914521169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb9882d1d725784cb5a4228ac92da98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DollyTrigger
+  dollyScript: {fileID: 1007650144}
+--- !u!65 &1914521172
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914521169}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.09592, y: 5.3407497, z: 3.7858846}
+  m_Center: {x: -4.5479608, y: 2.1703749, z: 0.10064471}
 --- !u!1001 &8806770311876733557
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1095,7 +1184,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 2602452545391547449, guid: 51d47cc6e6b1e2a4897c1e14c16cf7f5, type: 3}
+      insertIndex: 0
+      addedObject: {fileID: 1914521170}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51d47cc6e6b1e2a4897c1e14c16cf7f5, type: 3}
 --- !u!1660057539 &9223372036854775807
