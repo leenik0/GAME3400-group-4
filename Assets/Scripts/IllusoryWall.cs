@@ -1,10 +1,8 @@
-﻿using System;
-using System.Linq;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class IllusoryWall : MonoBehaviour
 {
-    public Camera cam;
+    public Transform player;
     public Vector3 visibleSide = Vector3.forward;
 
     private Renderer[] _renderers;
@@ -14,18 +12,17 @@ public class IllusoryWall : MonoBehaviour
     {
         _renderers = GetComponentsInChildren<Renderer>();
         _cols = GetComponentsInChildren<Collider>();
-        if (!cam) cam = Camera.main;
     }
 
     private void LateUpdate()
     {
-        if (!cam) return;
+        if (!player) return;
 
         var pos = transform.position;
         var n = transform.TransformDirection(visibleSide).normalized;
-        var side = Vector3.Dot(cam.transform.position - pos, n);
+        var side = Vector3.Dot(player.position - pos, n);
 
-        var visible = side > 0.01f;
+        var visible = side > 0.0001f;
         foreach (var r in _renderers) r.enabled = visible;
         foreach (var c in _cols) c.enabled = visible;
     }
