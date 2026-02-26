@@ -18,5 +18,6 @@ public class StairsController : MonoBehaviour
         
         if (d > flipDistance) return;
         player.Face(flipDirection);
+        player.SetPitch(45f);
     }
 }

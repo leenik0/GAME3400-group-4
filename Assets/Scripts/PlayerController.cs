@@ -68,7 +68,7 @@ public class PlayerController : MonoBehaviour
         var d = _lookInput * lookSensitivity;
         d *= Time.deltaTime * 60f;
         _yaw += d.x;
-        _pitch -= d.y;
+        _pitch = Mathf.Clamp(_pitch - d.y, -80f, 80f);
         transform.rotation = Quaternion.Euler(0f, _yaw, 0f);
         cam.localRotation = Quaternion.Euler(_pitch, 0f, 0f);
     }
@@ -79,5 +79,11 @@ public class PlayerController : MonoBehaviour
         var rot = Quaternion.LookRotation(dir.normalized, Vector3.up);
         _yaw = rot.eulerAngles.y;
         transform.rotation = Quaternion.Euler(0f, _yaw, 0f);
+    }
+
+    public void SetPitch(float pitch)
+    {
+        _pitch = Mathf.Clamp(pitch, -80f, 80f);
+        _pitch = pitch;
     }
 }
