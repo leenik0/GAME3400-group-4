@@ -3594,6 +3594,7 @@ Transform:
   - {fileID: 3501857862543735323}
   - {fileID: 7957503625943859295}
   - {fileID: 7721282180038909638}
+  - {fileID: 6495571213590980242}
   - {fileID: 1956194890114068635}
   - {fileID: 6085904345188927583}
   - {fileID: 7404236633825630679}
@@ -4647,6 +4648,84 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5c5ffb8edd6bb4a75b837b6b3187204c, type: 3}
   m_PrefabInstance: {fileID: 6052768340466954164}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6750437241764086137
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7759429409154090741}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: dc135b92f323744e39aa1366e6529a79, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 20.659777
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dc135b92f323744e39aa1366e6529a79, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 20.659777
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dc135b92f323744e39aa1366e6529a79, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 20.659777
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dc135b92f323744e39aa1366e6529a79, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.617
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dc135b92f323744e39aa1366e6529a79, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.21
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dc135b92f323744e39aa1366e6529a79, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.813
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dc135b92f323744e39aa1366e6529a79, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5724216
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dc135b92f323744e39aa1366e6529a79, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.36823988
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dc135b92f323744e39aa1366e6529a79, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.30361846
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dc135b92f323744e39aa1366e6529a79, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.6667448
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dc135b92f323744e39aa1366e6529a79, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0.957
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dc135b92f323744e39aa1366e6529a79, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -57.009
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dc135b92f323744e39aa1366e6529a79, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -99.226
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: dc135b92f323744e39aa1366e6529a79, type: 3}
+      propertyPath: m_Name
+      value: snowman plushie (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1411943980426511085, guid: dc135b92f323744e39aa1366e6529a79, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 1aee60da16f3ca149846a7db0a9788a8, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dc135b92f323744e39aa1366e6529a79, type: 3}
+--- !u!4 &6495571213590980242 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: dc135b92f323744e39aa1366e6529a79, type: 3}
+  m_PrefabInstance: {fileID: 6750437241764086137}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7830977203343505709
 PrefabInstance:
