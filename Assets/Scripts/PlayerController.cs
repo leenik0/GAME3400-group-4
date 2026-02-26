@@ -17,6 +17,9 @@ public class PlayerController : MonoBehaviour
 
     private float _yaw;
     private float _pitch;
+    
+    private float _bob;
+    private Vector3 _camInitPos;
 
     private void Awake()
     {
@@ -29,6 +32,8 @@ public class PlayerController : MonoBehaviour
 
         _yaw = transform.eulerAngles.y;
         _pitch = cam.localEulerAngles.x;
+
+        _camInitPos = cam.localPosition;
     }
 
     private void OnEnable()
@@ -51,6 +56,7 @@ public class PlayerController : MonoBehaviour
     {
         HandleMove();
         HandleLook();
+        HandleBob();
     }
 
     private void HandleMove()
@@ -71,6 +77,22 @@ public class PlayerController : MonoBehaviour
         _pitch = Mathf.Clamp(_pitch - d.y, -80f, 80f);
         transform.rotation = Quaternion.Euler(0f, _yaw, 0f);
         cam.localRotation = Quaternion.Euler(_pitch, 0f, 0f);
+    }
+
+    private void HandleBob()
+    {
+        var pos = _camInitPos;
+        if (_moveInput.sqrMagnitude > 0.01f)
+        {
+            _bob += Time.deltaTime * moveSpeed * 4f;
+            var offset = Mathf.Sin(_bob) * 0.05f;
+            pos = _camInitPos + Vector3.up * offset;
+        }
+        else
+        {
+            _bob = 0f;
+        }
+        cam.localPosition = Vector3.Lerp(cam.localPosition, pos, Time.deltaTime * 10f);
     }
 
     public void Face(Vector3 dir)
