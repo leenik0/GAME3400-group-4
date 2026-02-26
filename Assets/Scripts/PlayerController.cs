@@ -1,8 +1,6 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Rendering;
-using UnityEngine.Rendering.Universal;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour
@@ -25,7 +23,6 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-        QualitySettings.SetQualityLevel(QualitySettings.names.Length - 1, true);
         _controller = GetComponent<CharacterController>();
         moveAction.performed += ctx => _moveInput = ctx.ReadValue<Vector2>();
         moveAction.canceled += _ => _moveInput = Vector2.zero;
