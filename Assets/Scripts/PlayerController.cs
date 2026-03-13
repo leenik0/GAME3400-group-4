@@ -4,7 +4,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private CharacterController controller;
-    public float speed = 5f;
+    public float speed = 2f;
+    public float sprintSpeed = 4f;
     public Transform cam;
     private PlayerMechanics inputActions;
 
@@ -12,6 +13,8 @@ public class PlayerController : MonoBehaviour
     public float jumpHeight = 1f;
     public float gravity = -9.81f;
     private float verticalVelocity = 0f;
+
+    private bool _isSprinting;
 
     void Awake()
     {
@@ -21,7 +24,12 @@ public class PlayerController : MonoBehaviour
             cam = Camera.main.transform;
     }
 
-    void OnEnable() { inputActions.Enable(); }
+    void OnEnable()
+    {
+        inputActions.Enable();
+        inputActions.Player.Sprint.performed += ctx => _isSprinting = ctx.ReadValueAsButton();
+        inputActions.Player.Sprint.canceled += _ => _isSprinting = false;
+    }
     void OnDisable() { inputActions.Disable(); }
 
     void Update()
@@ -47,7 +55,8 @@ public class PlayerController : MonoBehaviour
             verticalVelocity += gravity * Time.deltaTime;
         }
 
-        Vector3 velocity = moveDirection * speed;
+        var moveSpeed = _isSprinting ? sprintSpeed : speed;
+        Vector3 velocity = moveDirection * moveSpeed;
         velocity.y = verticalVelocity;
         controller.Move(velocity * Time.deltaTime);
     }
