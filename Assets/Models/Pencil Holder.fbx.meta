@@ -1,9 +1,49 @@
 fileFormatVersion: 2
-guid: 88d3e59a036012d4285c8bf4d36e1f0b
+guid: 0e2051d8efbc3a04187e5da0839786cd
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grained yellow plastic
+    second: {fileID: 2100000, guid: e491b4e62f725e14ea2a08faa35ba5fd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Green Dossier Plastic Surface
+    second: {fileID: 2100000, guid: 21685ab19f589144b98a32ccae27266b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Light iron
+    second: {fileID: 2100000, guid: cc76d10cc4aab7941b3d8286c8b24c4a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Light iron.001
+    second: {fileID: 2100000, guid: 886b42b459b86ec4e8dd5007d51e8c50, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Light iron.002
+    second: {fileID: 2100000, guid: d5aa3fed87388b64cbb4cbb377548ad2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Light wood
+    second: {fileID: 2100000, guid: cac115b6c13c5f64f9607219b0b12660, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pigeon Blue pastel SWISS KRONO plastic
+    second: {fileID: 2100000, guid: 7b7d29f62a373a04b9f2e92eeeb96476, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sweet Plastic
+    second: {fileID: 2100000, guid: df99a8e7d554fc94fab70e86ea43aad1, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
