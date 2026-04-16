@@ -1,74 +1,9 @@
 fileFormatVersion: 2
-guid: 6b3a8a5b0fae8514893b025aa78bfee8
+guid: 252ea187e2815ce4e8b0cf5cec0d7074
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: "\u5927\u9EC4"
-    second: {fileID: 2100000, guid: a053d7d1dc3ff3d44a916d1554d78ab4, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: "\u5929\u7A7A\u84DD"
-    second: {fileID: 2100000, guid: ed1d5051f9d5f2b43946054b62c26fea, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: "\u68D5\u9ED1"
-    second: {fileID: 2100000, guid: 4166faaa5bcde6744a410d9d7719fd0d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: "\u6A59"
-    second: {fileID: 2100000, guid: adc2d2453f7a5d443a2c5b91aca8615e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: "\u6DF1\u84DD"
-    second: {fileID: 2100000, guid: 6b42d7f58e5168849907309433586b6e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: "\u773C\u73E0\u9ED1"
-    second: {fileID: 2100000, guid: 0efc5febe5cef7448a56a3fc92dcd120, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: "\u773C\u7736\u7EFF"
-    second: {fileID: 2100000, guid: 4db54d91637e90d48b56ca55b4cc0da6, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: "\u7C89\u767D"
-    second: {fileID: 2100000, guid: 24af3d4c3e6a4b844b0c4c785455f484, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: "\u7D2B\u7C89"
-    second: {fileID: 2100000, guid: f947d47f0e954fc49b06737c9763e61d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: "\u8349\u5E3D\u7EA2"
-    second: {fileID: 2100000, guid: fed2c9a5bfaea694fa74b0417ba69abe, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: "\u8349\u5E3D\u9EC4"
-    second: {fileID: 2100000, guid: f1f890d8ccb72d4479f61a425edb998e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: "\u9752"
-    second: {fileID: 2100000, guid: 7191bb677ee9b264a9d49eeb83e3b729, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: "\u9EC4"
-    second: {fileID: 2100000, guid: 2a2eba89f0b67f242931025d31bb0671, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
