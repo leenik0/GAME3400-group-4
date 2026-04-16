@@ -1018,8 +1018,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 2150773298
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0.5}
+    rgba: 3207737906
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0.7490196}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1703,8 +1703,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 2150773298
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0.5}
+    rgba: 3207737906
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0.7490196}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2419,8 +2419,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.37647063, g: 0.627451, b: 1, a: 1}
+    m_PressedColor: {r: 0.21605109, g: 0.45999628, b: 0.82210237, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -2440,7 +2440,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2612566368003717398}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3041609066706059611}
+        m_TargetAssemblyTypeName: LoginManager, Assembly-CSharp
+        m_MethodName: AttemptLogin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8347176996079883008
 GameObject:
   m_ObjectHideFlags: 0
@@ -2590,6 +2602,7 @@ GameObject:
   - component: {fileID: 6710380798190954136}
   - component: {fileID: 4718509160624930590}
   - component: {fileID: 3024923710405386583}
+  - component: {fileID: 3041609066706059611}
   m_Layer: 5
   m_Name: LoginScreen
   m_TagString: Untagged
@@ -2683,3 +2696,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &3041609066706059611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9117669374116282010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39edc83ee0a424342afd45049006984b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  errorText: {fileID: 3228095660266729587}
+  username: {fileID: 6209835224864684255}
+  password: {fileID: 7139571786239713541}
+  loginButton: {fileID: 8325710985783170201}
