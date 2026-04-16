@@ -1,11 +1,12 @@
 using TMPro;
-using Unity.VectorGraphics;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class LoginManager : MonoBehaviour
 {
-    public Scene nextScene;
+    public SceneAsset nextScene;
     public GameObject errorText;
     public GameObject screen;
 
@@ -48,6 +49,6 @@ public class LoginManager : MonoBehaviour
 
     void LoadNextScene()
     {
-
+        SceneManager.LoadScene(nextScene.name);
     }
 }
