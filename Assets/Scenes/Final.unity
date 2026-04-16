@@ -94,7 +94,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: ae3909c0b98a025409eec694f12b3345, type: 2}
-  m_LightingSettings: {fileID: 0}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 1e05c4d8371185d46bf785aedf2ab866, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -688,8 +688,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 582629129}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.14951101, y: 0.37845984, z: -0.062069144, w: 0.9113518}
-  m_LocalPosition: {x: -23.12672, y: 13.134357, z: -29.977331}
+  m_LocalRotation: {x: 0.08367406, y: 0.88499224, z: -0.17607732, w: 0.4228287}
+  m_LocalPosition: {x: -24.674957, y: 100.905594, z: 11.4733305}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3429,6 +3429,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8218184950162002249, guid: 7d44c3e406e06914fbbc6434b262689a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.214
+      objectReference: {fileID: 0}
+    - target: {fileID: -8218184950162002249, guid: 7d44c3e406e06914fbbc6434b262689a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.4307795
+      objectReference: {fileID: 0}
     - target: {fileID: -5527621789949980928, guid: 7d44c3e406e06914fbbc6434b262689a, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
@@ -3437,6 +3445,14 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: d2531203589820547ae51a36291b9079, type: 2}
+    - target: {fileID: 317186416969224086, guid: 7d44c3e406e06914fbbc6434b262689a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 317186416969224086, guid: 7d44c3e406e06914fbbc6434b262689a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.44
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7d44c3e406e06914fbbc6434b262689a, type: 3}
       propertyPath: m_Name
       value: windows
@@ -3449,6 +3465,30 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: d2531203589820547ae51a36291b9079, type: 2}
+    - target: {fileID: 4071548827189891424, guid: 7d44c3e406e06914fbbc6434b262689a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.044945
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071548827189891424, guid: 7d44c3e406e06914fbbc6434b262689a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -15.314419
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204352733198542559, guid: 7d44c3e406e06914fbbc6434b262689a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.9300017
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204352733198542559, guid: 7d44c3e406e06914fbbc6434b262689a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.471054
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764996552653742180, guid: 7d44c3e406e06914fbbc6434b262689a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.044945
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764996552653742180, guid: 7d44c3e406e06914fbbc6434b262689a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -15.314419
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4154,6 +4194,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e54f2dedfefb37d49869d163b007b0b1, type: 3}
       propertyPath: m_Name
       value: layout
+      objectReference: {fileID: 0}
+    - target: {fileID: 1078211572975835291, guid: e54f2dedfefb37d49869d163b007b0b1, type: 3}
+      propertyPath: m_CastShadows
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
