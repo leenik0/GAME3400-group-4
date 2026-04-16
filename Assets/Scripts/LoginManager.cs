@@ -7,6 +7,7 @@ public class LoginManager : MonoBehaviour
 {
     public Scene nextScene;
     public GameObject errorText;
+    public GameObject screen;
 
     [Header("Login Details")]
     public TMP_InputField username;
@@ -36,6 +37,13 @@ public class LoginManager : MonoBehaviour
         {
             errorText.SetActive(true);
         }
+    }
+
+    public void ExitScreen()
+    {
+        screen.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     void LoadNextScene()

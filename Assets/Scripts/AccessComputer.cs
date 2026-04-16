@@ -10,6 +10,13 @@ public class AccessComputer : MonoBehaviour
     private PlayerMechanics playerMechanics;
     private bool canInteract = false;
 
+    void Start()
+    {
+        // Just in case
+        if (popupText) popupText.SetActive(false);
+        if (loginScreen) loginScreen.SetActive(false);
+    }
+
     void Awake()
     {
         playerMechanics = new PlayerMechanics();
@@ -41,15 +48,21 @@ public class AccessComputer : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Entered");
-        canInteract = true;
-        if (popupText) popupText.SetActive(true);
+        if (other.CompareTag("Player"))
+        {
+            Debug.Log("Entered");
+            canInteract = true;
+            if (popupText) popupText.SetActive(true);
+        }
     }
 
     void OnTriggerExit(Collider other)
     {
-        Debug.Log("Exited");
-        canInteract = false;
-        if (popupText) popupText.SetActive(false);
+        if (other.CompareTag("Player"))
+        {
+            Debug.Log("Exited");
+            canInteract = false;
+            if (popupText) popupText.SetActive(false);
+        }
     }
 }
