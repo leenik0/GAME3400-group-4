@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 46e517fc0b53f1240b04eb666728a31f
+guid: 46ff1dd7a897ef64ea4e8b2944fa1798
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
@@ -22,7 +22,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -31,11 +31,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Gaming
+      name: Sitting Talking
       takeName: mixamo.com
       internalID: -203655887218126122
       firstFrame: 0
-      lastFrame: 151
+      lastFrame: 1349
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
