@@ -6,6 +6,7 @@ public class FootstepController : MonoBehaviour
 {
     public AudioClip footstepClip;
     public float moveThreshold = 0.1f;
+    public float volume = 0.08f;
 
     private CharacterController _controller;
     private AudioSource _audio;
@@ -14,6 +15,7 @@ public class FootstepController : MonoBehaviour
     {
         _controller = GetComponent<CharacterController>();
         _audio = GetComponent<AudioSource>();
+        _audio.volume = volume;
         _audio.clip = footstepClip;
         _audio.loop = true;
         _audio.playOnAwake = false;

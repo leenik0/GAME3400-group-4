@@ -5706,6 +5706,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FootstepController
   footstepClip: {fileID: 8300000, guid: d35e304abcf36ec4596bd1e1e27bb607, type: 3}
   moveThreshold: 0.1
+  volume: 0.08
 --- !u!82 &533670327
 AudioSource:
   m_ObjectHideFlags: 0
