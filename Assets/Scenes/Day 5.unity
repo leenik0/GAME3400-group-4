@@ -10998,6 +10998,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4307550881538473994, guid: 572f65a8bf3094647be980dad9df2ba7, type: 3}
+      propertyPath: m_Volume
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4307550881538473994, guid: 572f65a8bf3094647be980dad9df2ba7, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 91c4b06b7f6c5b448a5a84d2001d61dc, type: 3}
+    - target: {fileID: 4307550881538473994, guid: 572f65a8bf3094647be980dad9df2ba7, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
