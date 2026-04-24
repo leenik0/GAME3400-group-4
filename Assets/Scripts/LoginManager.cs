@@ -15,6 +15,14 @@ public class LoginManager : MonoBehaviour
     public TMP_InputField password;
     public Button loginButton;
 
+    void Start()
+    {
+        username.text = "123456789";
+        password.text = "password1";
+        username.readOnly = true;
+        password.readOnly = true;
+    }
+
     void Update()
     {
         if (!string.IsNullOrEmpty(username.text) && !string.IsNullOrEmpty(password.text))
