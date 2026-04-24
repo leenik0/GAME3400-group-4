@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class LoginManager : MonoBehaviour
 {
-    public SceneAsset nextScene;
+    public string nextScene;
     public GameObject errorText;
     public GameObject screen;
 
@@ -49,6 +49,6 @@ public class LoginManager : MonoBehaviour
 
     void LoadNextScene()
     {
-        SceneManager.LoadScene(nextScene.name);
+        SceneManager.LoadScene(nextScene);
     }
 }
